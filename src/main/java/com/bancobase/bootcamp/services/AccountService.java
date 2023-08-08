@@ -4,9 +4,11 @@ import com.bancobase.bootcamp.dto.AccountDTO;
 import com.bancobase.bootcamp.repositories.AccountRepository;
 import com.bancobase.bootcamp.schemas.*;
 import com.bancobase.bootcamp.utils.Utils;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service
 public class AccountService {
 
     private final AccountRepository accountRepository;
