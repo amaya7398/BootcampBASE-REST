@@ -43,4 +43,8 @@ public class AccountService {
 
         return List.of(savedAccount);
     }
+
+    public List<AccountSchema> getAccountsByCustomerId(Long customerId) {
+        return accountRepository.findByCustomerCustomerId(customerId);
+    }
 }
